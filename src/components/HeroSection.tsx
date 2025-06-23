@@ -15,7 +15,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onViewMenu }) => {
         <div 
           className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.3)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=2047&q=80')`
+            backgroundImage: `linear-gradient(rgba(18, 18, 18, 255), rgba(18, 18, 18, 0.1)), url('/images/b.png')`
           }}
         />
       </div>
@@ -96,6 +96,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onViewMenu }) => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.5 }}
           className="absolute bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer"
+          style={{top: "25rem"}}
           onClick={() => {
             const element = document.getElementById('about');
             if (element) {

@@ -93,13 +93,13 @@ const AboutSection = () => {
                 <div 
                   className="h-48 lg:h-64 bg-cover bg-center rounded-lg shadow-lg"
                   style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`
+                    backgroundImage: `url('/images/a.jpeg')`
                   }}
                 />
                 <div 
                   className="h-32 lg:h-40 bg-cover bg-center rounded-lg shadow-lg"
                   style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`
+                    backgroundImage: `url('/images/c.png')`
                   }}
                 />
               </motion.div>
