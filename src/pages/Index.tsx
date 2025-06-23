@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import MenuSection from '@/components/MenuSection';
-import GallerySection from '@/components/G allerySection';
+import GallerySection from '@/components/GallerySection';
 import ReservationSection from '@/components/ReservationSection';
 import Footer from '@/components/Footer';
 
