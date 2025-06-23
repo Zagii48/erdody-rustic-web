@@ -15,7 +15,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onViewMenu }) => {
         <div 
           className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.3)), url('https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
+            backgroundImage: `linear-gradient(rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.3)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=2047&q=80')`
           }}
         />
       </div>
@@ -90,12 +90,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onViewMenu }) => {
           </motion.div>
         </motion.div>
 
-        {/* Scroll Indicator */}
+        {/* Scroll Indicator - moved lower */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer"
+          onClick={() => {
+            const element = document.getElementById('about');
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}
